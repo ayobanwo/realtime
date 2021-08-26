@@ -1,0 +1,16 @@
+body{
+    padding:50px 30px ;
+    background: #49657d;
+    color: white;
+}
+section{
+    display: flex;
+}
+#googleMap{
+    height: 80vh;
+}
+.users{
+    width: 400px;
+    padding:30px 50px ;
+    border: 1px solid white;
+}

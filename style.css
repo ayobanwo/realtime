@@ -1,0 +1,49 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4 ), rgba(0, 0, 0, 0.4)),
+    url(img/backg.jpg);
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: candara;
+  height: 100%;
+}
+.heading{
+    text-align: center;
+    padding: 30px 0;
+    margin: 50px;
+    font-size: 50px;
+}
+.login-form {
+  display: flex;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 3%;
+  margin: 2% 35%;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: -1px 4px 28px 0px rgb(0 0 0 / 75%);
+  align-items: center;
+  justify-content: center;
+}
+.log-heading{
+    margin-bottom: 20px;
+}
+input{
+    margin-bottom: 30px;
+    padding: 10px ;
+}
+.new{
+    color: white;
+}
+.new:hover{
+    text-decoration: none;
+    color: yellow;
+}
+.log{
+    color: white;
+    
+}
+.log:hover{
+    text-decoration: none;
+    color: yellow;
+}
