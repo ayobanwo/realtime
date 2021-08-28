@@ -1,9 +1,7 @@
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
 #map {
-
-  height: 70%;
-  width: 70%;
+  height: 100%;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -12,24 +10,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(rgba(10, 0, 40, 0.4 ), rgba(10, 0, 40, 0.4)),
-    url(../img/road.jpg);
-      background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-header{
-    background: #3e7fb8;
-    font-size: 40px;
-    text-align: center;
-    padding: 30px;
-    margin-bottom: 20px;
-    font-family: Arial;
-    color: white;
-    font-family: candara;
-}
-
-
 
 .custom-map-control-button {
   background-color: #fff;

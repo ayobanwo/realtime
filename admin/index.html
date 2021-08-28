@@ -16,30 +16,26 @@
     <title>Admin</title>
 </head>
 <body>
-<header>
-    Luban Real-Time Web Tracking System
-</header>
-<div class="container">
-    <h1>Admin Map Interface</h1>
 
-    <section>
-        <div id="googleMap" style="width:100%;"></div>
-        <div class="users">
-            <h3 class="center" >Users</h3>
-            <ul>
-                <li class="driver-list">Driver 1</li>
-                <li class="driver-list">Driver 2</li>
-                <li class="driver-list">Driver 3</li>
-            </ul>
-        </div>
-    </section> 
-</div>
-    
-    <script>
-        function myMap() {
-            var mapProp= {
-                center:new google.maps.LatLng(51.508742,-0.120850),
-                zoom:5,
+<h1>Admin Map Interface</h1>
+
+ <section>
+    <div id="googleMap" style="width:100%;"></div>
+    <div class="users">
+        <h3 class="center" >Users</h3>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+ </section> 
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }

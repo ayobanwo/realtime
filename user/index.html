@@ -3,24 +3,14 @@
 <head>
     <title>Geolocation</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="index.js"></script>
 </head>
 
 <body>
+    <div id="map"></div>
 
-    <header>
-        Luban Real-Time Web Tracking System
-    </header>
-
-    <div class="container" id="map"></div>
-
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOInMFNvErd2oJPx3DQZBFgmSZLUb5cCY&callback=initMap&libraries=&v=weekly"
         async></script>
 </body>
