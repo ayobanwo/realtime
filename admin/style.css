@@ -1,16 +1,52 @@
 body{
-    padding:50px 30px ;
     background: #49657d;
     color: white;
+    padding-bottom: 30px;
+     background-image: linear-gradient(rgba(10, 0, 40, 0.4 ), rgba(10, 0, 40, 0.4)),
+    url(../img/maplight.jpg);
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+    background: linear-gradient(to right, #ad5389, #3c1053);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    font-family: Arial;
+    font-family: candara;
+}
+.container{
+    
+}
+h1{
+    color: #effff1cf;
+    border-bottom: 2px solid black;
+    display: inline;
+    margin-bottom: 50px;
 }
 section{
     display: flex;
 }
 #googleMap{
     height: 80vh;
+    opacity: 0.8;
 }
 .users{
     width: 400px;
     padding:30px 50px ;
     border: 1px solid white;
+    background: #39383ff5;
+}
+.driver-list{
+    list-style: none;
+    padding: 5px;
+    background-color: #112e2e;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+ul{
+    padding: 0;
 }
