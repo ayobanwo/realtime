@@ -19,7 +19,20 @@ let map, infoWindow;
 
 //     alert(a);
 // }
+var latr;
 
+function send_position(params) {
+    var latd = params["lat"];
+    var lngd = params["lng"];
+    
+    $.ajax({
+        method: "get",
+        url: "http://localhost/webtrack/api/updateUserLocation.php?lat="+latd+"&lng="+lngd+"&usr_name=user1",
+        success: function (data){
+            alert('success');
+        }
+    })
+}
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -40,6 +53,8 @@ function initMap() {
                         lat: position.coords.latitude,
                         lng: position.coords.longitude,
                     };
+                    latr = pos;
+                    send_position(latr);
                     infoWindow.setPosition(pos);
                     infoWindow.setContent("Location found.");
                     infoWindow.open(map);
@@ -53,7 +68,7 @@ function initMap() {
             // Browser doesn't support Geolocation
             handleLocationError(false, infoWindow, map.getCenter());
         }
-    });
+    }, { passive: true });
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -65,3 +80,5 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     );
     infoWindow.open(map);
 }
+
+
